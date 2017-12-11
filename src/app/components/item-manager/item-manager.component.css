@@ -1,0 +1,52 @@
+.master {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 40vh;
+    margin-top: 1em;
+}
+
+.master>*+* {
+    margin-top: 5em;
+}
+
+.prenium {
+    display: flex;
+    height: 25%;
+    width: calc(100% - 2px);
+    border: solid 1px yellow;
+}
+
+.standard {
+    display: flex;
+    height: 60%;
+    width: calc(100% - 2px);
+    border: solid 1px blue;
+}
+
+.trash {
+    display: flex;
+    height: 40%;
+    width: calc(100% - 2px);
+    border: solid 1px red;
+}
+
+.prenium-content {
+    width: 100%;
+    min-width: 200px;
+    height: 100%;
+}
+
+.standard-content {
+    width: 100%;
+    min-width: 200px;
+    height: 100%;
+}
+
+.trash-content {
+    width: 100%;
+    min-width: 200px;
+    height: 100%;
+    opacity: 0.5;
+}

@@ -1,0 +1,8 @@
+<div class="dropzone" #viewDropzone (dragenter)="viewDragenter()" (dragleave)="viewDragleave()" (dragover)="false" (drop)="viewDrop($event)" [ngStyle]="Style">
+    <ng-container *ngFor="let item of dropzone?.items$|async; let index = index">
+        <div *ngIf="index === dropzone?.previewPos?.after" class="divider"></div>
+        <app-draggable [item]="item" [customStyle]="customItemStyle"></app-draggable>
+        <div *ngIf="index === dropzone?.previewPos?.before" class="divider"></div>
+    </ng-container>
+
+</div>

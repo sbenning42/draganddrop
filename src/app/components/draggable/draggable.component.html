@@ -1,0 +1,5 @@
+<div class="box" #viewDraggable draggable="true" (dragstart)="viewDragstart($event)" (dragend)="viewDragend($event)" (drag)="viewDrag($event)" [ngStyle]="Style">
+    <div class="wrapper">
+        <img id="iii" src="{{ item?.data }}">
+    </div>
+</div>
